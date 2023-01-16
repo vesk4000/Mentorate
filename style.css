@@ -1,0 +1,96 @@
+body {
+    margin: 0;  
+    min-height: 100vh; 
+    font-family: "Roboto";
+    color: #0b3509;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+  }
+
+  .header, .footer {
+    background-color: #56a054;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    height: 100px;
+    flex-wrap: wrap;
+  }
+  .logo{
+    align-self: center;
+  }
+
+  .name {
+    font-family: "Alfa Slab One";
+    font-size: xx-large;
+    color: #eef6ee;
+    text-decoration: none;
+  }
+
+  .nav {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .icon {
+    height: 45px;  
+    width: auto;
+  }
+  
+  .button {
+    background-color: #335e31;
+    border-radius: 8px;
+    text-align: center;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 6px;
+  }
+
+  .text {
+    padding: 18px 15px;
+    align-self: center;
+    line-height: 35px;
+    font-weight: 100;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #eef6ee;
+  }
+
+  .hero {
+    background-color: #eef6ee;
+    padding: 40px 45px 60px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-inner {
+    max-width: 760px;
+  }
+
+  .h1 {
+    font-family: "Alfa Slab One";
+    text-align: center;
+    font-size: 3.5em;
+  }
+  
+  .welcomeText {
+    text-align: center;
+    font-size: 1.4em;
+  }
+
+  .container {
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .button2 {
+    background-color: #335e31;
+    color: #eef6ee;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1.18rem;
+  }

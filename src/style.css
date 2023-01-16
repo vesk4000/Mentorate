@@ -4,9 +4,10 @@ body {
 	color: #0b3509;
 	display: flex;
 	flex-direction: column;
+	min-height: 100%;
 }
 
-.header, .footer {
+header, footer {
 	background-color: #56a054;
 	color: white;
 	/*display: flex;*/
@@ -18,6 +19,119 @@ body {
 
 .content {
 	flex-grow: 1;
+	background-color: #eef6ee;
+	padding: 10;
+}
+
+.content-box {
+	margin: 10;
+	background-color:rgb(248, 255, 246);
+	padding: 10
+}
+
+.profile-bio {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	flex-wrap:nowrap;
+}
+
+.profile-bio-contents {
+	padding-left: 10;
+	flex-grow: 1;
+}
+
+.profile-bio-contents-name {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.profile-bio-contents-name-edit {
+	margin-right: 30;
+	font-size: 18;
+	background-color:#335e31;
+	color:#eef6ee;
+	border-radius: 8px;
+	border: none;
+	padding: 5 10;
+}
+
+.profile-bio-contents-rest {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap:40px;
+	row-gap:10px;
+}
+
+.profile-bio-pic {
+	width: 150;
+}
+
+.profile-add-meeting-form {
+	display:inline
+}
+
+.profile-add-meeting-button {
+	margin-right: 30;
+	font-size: 18;
+	background-color:#335e31;
+	color:#eef6ee;
+	border-radius: 8px;
+	border: none;
+	padding: 5 10;
+}
+
+.profile-meeting-slots {
+	overflow-x: scroll;
+	display: flex;
+	padding-bottom: 5;
+}
+
+.profile-meeting-slot {
+	padding: 5px;
+	background-color:#eef6ee;
+	border: 2px solid #0b3509;
+	margin: 10;
+	min-width: 180;
+	max-width: 180;
+}
+
+.profile-button {
+	font-size: 18;
+	background-color:#335e31;
+	color:#eef6ee;
+	border-radius: 8px;
+	border: none;
+	padding: 5 10;
+}
+
+.profile-meeting-slot-el {
+	margin-bottom: 8;
+}
+
+.profile-mini-image {
+	height: 30;
+}
+
+.profile-textbox {
+	min-height: 100;
+	width: 300;
+}
+
+.star-button {
+	border: none;
+	font-size:20px;
+	background-color:rgb(248, 255, 246)
+}
+
+.search-form {
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 10px;
+	column-gap: 30px;
 }
 
 .footer {

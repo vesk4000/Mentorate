@@ -16,6 +16,7 @@ body {
     height: 100px;
     flex-wrap: wrap;
   }
+
   .logo{
     align-self: center;
   }
@@ -58,26 +59,63 @@ body {
     color: #eef6ee;
   }
 
+  .heroHome {
+    background-color: #eef6ee;
+    padding: 40px 45px 0px;
+    justify-content: center;
+    text-align: center;
+  }
+
   .hero {
     background-color: #eef6ee;
     padding: 40px 45px 60px;
     display: flex;
+    align-items: center;
     justify-content: center;
   }
 
+  .hero-chat {
+    background-color: #eef6ee;
+    display: flex;
+    align-items: stretch;
+    align-content: stretch;
+    justify-content: center;
+  }
+
+  .hero-innerHome {
+    max-width: 1000px;
+    position: relative;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
   .hero-inner {
     max-width: 1000px;
+  }
+
+  .homepic {
+    width: 100%;
+    position: relative;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .h1 {
     font-family: "Alfa Slab One";
     text-align: center;
     font-size: 3.5em;
+    margin-bottom: 60px;
   }
   
   .welcomeText {
     text-align: center;
     font-size: 1.4em;
+    position: relative;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .container {
@@ -152,4 +190,111 @@ body {
 
   .optional {
     font-style: italic;
+  }
+
+  .chats {
+    height: 100%;
+    flex-grow: 1;
+  }
+  
+  .opened {
+    height: 100%;
+    flex-grow: 2;
+  }
+
+  .user-chat {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .user-chat-current {
+    background-color: #96c794;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .user-photo-chat {
+    width: 80px;
+  }
+  
+  .username-chat-text {
+    font-size: 1.3rem;
+    font-weight: bolder;
+  }
+
+  .h1-chat {
+    font-family: "Alfa Slab One";
+    margin-left: 40px;
+    text-align: left;
+    font-size: 1.9rem;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .chat-header, .chat-footer {
+    background-color: #96c79461;
+    padding: 20px 40px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .chat-header2 {
+    padding: 20px 30px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .messages {
+    padding: 30px 30px 60px;  
+    min-height: 40vh;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+  }
+
+  .other-message {
+    background-color: #96c79461;
+    padding: 15px 15px;
+    text-align: center;
+    border-radius: 15px;
+    display: flex;
+    gap: 25px;
+    align-content: center;
+    align-items: center;
+    align-self: flex-start;
+    max-width: 350px;
+  }
+  
+  .my-message {
+    background-color: #96c794;
+    padding: 15px 15px;
+    text-align: center;
+    border-radius: 15px;
+    display: flex;
+    gap: 25px;
+    align-content: center;
+    align-items: center;
+    max-width: 350px;
+    align-self: flex-end;
+  }
+
+  .chatbox {
+    width: 30rem;
+    height: 2rem;
+    padding: 0px 10px;
+  }
+
+  .send-photo-chat {
+    width: 60px;
   }

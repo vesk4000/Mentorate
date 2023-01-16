@@ -9,13 +9,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto&display=swap" rel="stylesheet">
     <style>
 
-      .header, .footer{
-          background-color: #56a054;
-          color: white;
-          display: flex;
-          justify-content: space-between;
-          padding: 0 40px;
-          flex-wrap: wrap;
+      body {
+        margin: 0;
+        font-family: "Roboto";
+        color: #0b3509;
+      }
+
+      .header, .footer {
+        
+        background-color: #56a054;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 40px;
+        flex-wrap: wrap;
       }
 
       .name {
@@ -37,21 +44,58 @@
       }
       
       .button {
-        width: 120px;
         background-color: #335e31;
-        border-radius: 6px;
+        border-radius: 8px;
         text-align: center;
         margin-right: 20px;
         margin-bottom: 6px;
       }
 
       .text {
+        margin-left: 13px;
+        margin-right: 13px;
         align-self: center;
         line-height: 35px;
         font-weight: 100;
-        font-family: "Roboto";
         text-decoration: none;
         color: #eef6ee;
+      }
+
+      .hero {
+        background-color: #eef6ee;
+        padding: 60px 45px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .hero-inner {
+        max-width: 760px;
+      }
+
+      .heading {
+        font-family: "Alfa Slab One";
+        text-align: center;
+        font-size: 3.5em;
+      }
+      
+      .welcomeText {
+        text-align: center;
+        font-size: 1.4em;
+      }
+
+      .container {
+        margin-top: 50px;
+        width: 100%;
+        text-align: center;
+      }
+      
+      .button2 {
+        background-color: #335e31;
+        color: #eef6ee;
+        text-decoration: none;
+        padding: 12px 20px;
+        border-radius: 8px;
+        font-size: 1.18rem;
       }
   </style>
 </head>
@@ -86,8 +130,14 @@
         </div>
       </div>
     </div>
-    <div>
-      actual page goes here
+    <div class="hero">
+      <div class="hero-inner">
+        <h1 class="heading">Welcome To Our Site!</h1>
+        <p class="welcomeText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nesciunt accusantium tempora voluptatem velit enim quaerat sapiente sed, repellat temporibus eaque dignissimos, saepe ab recusandae incidunt fuga veniam vero vitae!</p>
+        <div class="container">
+          <a href="#" class="button2 text">Sign Up Now</a>
+        </div>
+      </div>
     </div>
     <div class="footer">
       <div class="name">

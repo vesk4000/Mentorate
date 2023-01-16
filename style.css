@@ -66,7 +66,7 @@ body {
   }
 
   .hero-inner {
-    max-width: 760px;
+    max-width: 1000px;
   }
 
   .h1 {
@@ -93,4 +93,63 @@ body {
     padding: 12px 20px;
     border-radius: 8px;
     font-size: 1.18rem;
+  }
+
+  .signInContainer {
+    background-color: #56a054;
+    padding: 40px 90px;
+    border-radius: 30px;
+  }
+
+  .form {
+    text-align: center;
+    line-height: 35px;
+  }
+
+  .label {
+    color: #0b3509;
+    margin-right: 20px;
+  }
+
+  .formSignUp {
+    text-align: right;
+    line-height: 35px;
+  }
+
+  .signUpPic {
+    width: 410px;
+    height: auto;
+  }
+
+  .signUpContainer {
+    background-color: #56a054;
+    padding: 40px 60px;
+    border-radius: 30px;
+    width: 840px;
+    height: 600px;
+  }
+
+  .requiredFields, .optionalFields {
+    width: 840px;
+    height: 300px;
+    display: flex;
+    gap: 70px;
+    align-items: center;
+    justify-content: center
+  }
+
+  .textbox {
+    background-color: #eef6ee;
+    border-style: hidden;
+    border-radius: 5px;
+    height: 1.25rem;
+  }
+  
+  .caption {
+    font-weight: bold;
+    font-size: larger;
+  }
+
+  .optional {
+    font-style: italic;
   }

@@ -211,8 +211,8 @@ footer {
 	padding: 6px 22px;
 	font-size: 1.18rem;
 	border-style: none;
-	position: relative;
-	top: -130%;
+	/* position: relative;
+	top: -130%; */
 	min-width: 120px;
 }
 
@@ -238,6 +238,7 @@ footer {
 	flex-direction: column;
 	text-align: center;
 	justify-content: start;
+	align-content: flex-start;
 }
 
 .hero {
@@ -291,8 +292,8 @@ footer {
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	text-align: center;
 	font-size: 3.5em;
-	position: relative;
-	top: -4%;
+	/* position: relative;
+	top: -4%; */
 }
 
 .welcomeText {
@@ -300,8 +301,8 @@ footer {
 	font-size: 1.4em;
 	max-width: 800px;
 	align-self: center;
-	position: relative;
-	top: -6%;
+	/* position: relative;
+	top: -6%; */
 }
 
 .container {

@@ -135,8 +135,8 @@ body {
 	color: white;
 	display: flex;
 	justify-content: space-between;
-	padding: 0 40px;
-	height: 100px;
+	padding: 10px 40px;
+	min-height: 80px;
 	flex-wrap: wrap;
 }
 
@@ -196,10 +196,24 @@ footer {
 .button {
 	background-color: #335e31;
 	border-radius: 8px;
+	color: #eef6ee;
 	text-align: center;
 	margin-right: 20px;
 	margin-left: 20px;
 	margin-bottom: 6px;
+}
+
+.button2 {
+	background-color: #335e31;
+	border-radius: 8px;
+	color: #eef6ee;
+	text-decoration: none;
+	padding: 6px 22px;
+	font-size: 1.18rem;
+	border-style: none;
+	position: relative;
+	top: -130%;
+	min-width: 120px;
 }
 
 .text {
@@ -212,11 +226,18 @@ footer {
 	color: #eef6ee;
 }
 
-.heroHome {
+/* .heroHome {
 	background-color: #eef6ee;
 	padding: 40px 45px 0px;
-	justify-content: center;
+} */
+
+.heroHome {
+	background-color: #eef6ee;
+	padding: 0px 45px 60px;
+	display: flex;
+	flex-direction: column;
 	text-align: center;
+	justify-content: start;
 }
 
 .hero {
@@ -230,60 +251,63 @@ footer {
 .hero-chat {
 	background-color: #eef6ee;
 	display: flex;
-	align-items: stretch;
+	/* align-items: stretch;
 	align-content: stretch;
-	justify-content: center;
+	justify-content: center; */
 }
 
-.hero-innerHome {
+/* .hero-innerHome {
 	max-width: 1000px;
 	position: relative;
 	top: 8%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-}
+} */
+/* .hero-innerHome {
+	max-width: 1000px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: auto;
+	background-color: #883509;
+} */
 
 .hero-inner {
 	max-width: 1000px;
 }
 
-.homepic {
+/* .homepic {
 	width: 100%;
 	position: relative;
 	top: 25%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+} */
+.homepic {
+	width: 100%;
 }
 
 .h1 {
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	text-align: center;
 	font-size: 3.5em;
-	margin-bottom: 60px;
+	position: relative;
+	top: -4%;
 }
 
 .welcomeText {
 	text-align: center;
 	font-size: 1.4em;
+	max-width: 800px;
+	align-self: center;
 	position: relative;
-	top: 5%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	top: -6%;
 }
 
 .container {
 	margin-top: 50px;
 	width: 100%;
 	text-align: center;
-}
-
-.button2 {
-	background-color: #335e31;
-	color: #eef6ee;
-	text-decoration: none;
-	padding: 12px 20px;
-	border-radius: 8px;
-	font-size: 1.18rem;
 }
 
 .signInContainer {
@@ -295,6 +319,9 @@ footer {
 .form {
 	text-align: center;
 	line-height: 35px;
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
 }
 
 .label {
@@ -303,8 +330,17 @@ footer {
 }
 
 .formSignUp {
-	text-align: right;
-	line-height: 35px;
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+}
+
+.requiredFields,
+.optionalFields {
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
+	/* align-items: flex-end; */
 }
 
 .signUpPic {
@@ -313,21 +349,15 @@ footer {
 }
 
 .signUpContainer {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: flex-end;
+	column-gap: 40px;
 	background-color: #56a054;
 	padding: 40px 60px;
 	border-radius: 30px;
 	width: 840px;
-	height: 600px;
-}
-
-.requiredFields,
-.optionalFields {
-	width: 840px;
-	height: 300px;
-	display: flex;
-	gap: 70px;
-	align-items: center;
-	justify-content: center
+	height: auto;
 }
 
 .textbox {
@@ -340,6 +370,7 @@ footer {
 .caption {
 	font-weight: bold;
 	font-size: larger;
+	text-align: center;
 }
 
 .optional {

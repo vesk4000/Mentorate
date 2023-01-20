@@ -12,21 +12,21 @@
 <body>
 	<header class="header">
 		<div class="logo">
-			<a class="name" href="./index.html">Mentorate</a>
+			<a class="name" href="./src/index.html">Mentorate</a>
 		</div>
 		<div class="nav">
-			<div class="button">
-				<a class="text" href="./src/search.html">
+			<div class="nav-button">
+				<a class="big button text" href="./src/search.html">
 					Find A Mentor
 				</a>
 			</div>
 			<div>
-				<a href="./chat.html">
+				<a href="./src/chat.html">
 					<img class="icon" src="./assets/chat.png" alt="chat">
 				</a>
 			</div>
 			<div>
-				<a href="./notifications.html">
+				<a href="./src/notifications.html">
 					<img class="icon" src="./assets/notification.png" alt="notification">
 				</a>
 			</div>
@@ -35,8 +35,8 @@
 					<img class="icon" src="./assets/profile.png" alt="profile">
 				</a>
 			</div>
-			<div class="button">
-				<a class="text" href="./signIn.html">
+			<div class="nav-button">
+				<a class="big button text" href="./src/signIn.html">
 					Sign In
 				</a>
 			</div>
@@ -48,11 +48,11 @@
 			<form class="search-form">
 				<div>
 					<label for="search-name">Name</label>
-					<input type="text" id="search-name">
+					<input class="textbox" type="text" id="search-name">
 				</div>
 				<div>
 					<label for="search-category">Category</label>
-					<select name="search-category" id="search-category">
+					<select class="textbox" name="search-category" id="search-category">
 						<option value="any">Any</option>
 						<option value="academic">Academic</option>
 						<option value="general">General</option>
@@ -62,11 +62,11 @@
 				</div>
 				<div>
 					<label for="search-company">Company</label>
-					<input type="text" id="search-company">
+					<input class="textbox" type="text" id="search-company">
 				</div>
 				<div>
 					<label for="search-location">Location</label>
-					<input type="text" id="search-location">
+					<input class="textbox" type="text" id="search-location">
 				</div>
 				<div>
 					<label>Minimum Rating</label>
@@ -76,16 +76,18 @@
 					<button class="star-button">☆</button>
 					<button class="star-button">☆</button>
 				</div>
-				<input type="submit" value="Search" class="profile-button">
+				<button type="submit" value="Search" class="transparent">
+					<img class="photo-button" src="./assets/search.png" alt="">
+				</button>
 			</form>
 		</div>
-		<div class="content-box">
+		<div class="content-box darken">
 			<div class="profile-bio">
-				<img class="profile-bio-pic" src="./assets/bio-profile.png">
+				<img class="profile-bio-pic" src="./assets/user1.png">
 				<div class="profile-bio-contents">
 					<div class="profile-bio-contents-name">
 						<h2>Tom Scott</h2>
-						<a class="profile-bio-contents-name-edit" href = "./src/user.html">Book a Meeting</a>
+						<a class="small button" href = "./src/user.html">Book a Meeting</a>
 					</div>
 					<div class="profile-bio-contents-rest">
 						<div>Category: <strong>General</strong></div>
@@ -96,13 +98,13 @@
 				</div>
 			</div>
 		</div>
-		<div class="content-box">
+		<div class="content-box darken">
 			<div class="profile-bio">
-				<img class="profile-bio-pic" src="./assets/bio-profile.png">
+				<img class="profile-bio-pic" src="./assets/user2.png">
 				<div class="profile-bio-contents">
 					<div class="profile-bio-contents-name">
 						<h2>Jimmy McGill</h2>
-						<a class="profile-bio-contents-name-edit" href = "./src/user.html">Book a Meeting</a>
+						<a class="small button" href = "./src/user.html">Book a Meeting</a>
 					</div>
 					<div class="profile-bio-contents-rest">
 						<div>Category: <strong>Legal</strong></div>
@@ -113,13 +115,30 @@
 				</div>
 			</div>
 		</div>
-		<div class="content-box">
+		<div class="content-box darken">
 			<div class="profile-bio">
-				<img class="profile-bio-pic" src="./assets/bio-profile.png">
+				<img class="profile-bio-pic" src="./assets/user3.png">
 				<div class="profile-bio-contents">
 					<div class="profile-bio-contents-name">
 						<h2>John Doe</h2>
-						<a class="profile-bio-contents-name-edit" href = "./src/user.html">Book a Meeting</a>
+						<a class="small button" href = "./src/user.html">Book a Meeting</a>
+					</div>
+					<div class="profile-bio-contents-rest">
+						<div>Category: <strong>Academic</strong></div>
+						<div>Company: <strong>TUDelft</strong></div>
+						<div>Location: <strong>Delft, The Netherlands</strong></div>
+						<div>Rating: <strong>5.0★</strong></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content-box darken">
+			<div class="profile-bio">
+				<img class="profile-bio-pic" src="./assets/user4.png">
+				<div class="profile-bio-contents">
+					<div class="profile-bio-contents-name">
+						<h2>Jane Doe</h2>
+						<a class="small button" href = "./src/user.html">Book a Meeting</a>
 					</div>
 					<div class="profile-bio-contents-rest">
 						<div>Category: <strong>Academic</strong></div>
@@ -133,7 +152,7 @@
 	</div>
 	<footer class="footer">
 		<div class="logo">
-			<a class="name" href="./index.html">Mentorate</a>
+			<a class="name" href="./src/index.html">Mentorate</a>
 		</div>
 		<div class="text">
 			Created by: Veselin Mitev and Aleksandra Savova

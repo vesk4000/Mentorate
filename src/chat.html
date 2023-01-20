@@ -15,8 +15,8 @@
 			<a class="name" href="./src/index.html">Mentorate</a>
 		</div>
 		<div class="nav">
-			<div class="button">
-				<a class="text" href="./src/search.html">
+			<div class="nav-button">
+				<a class="big button text" href="./src/search.html">
 					Find A Mentor
 				</a>
 			</div>
@@ -35,43 +35,58 @@
 					<img class="icon" src="./assets/profile.png" alt="profile">
 				</a>
 			</div>
-			<div class="button">
-				<a class="text" href="./src/signIn.html">
+			<div class="nav-button">
+				<a class="big button text" href="./src/signIn.html">
 					Sign In
 				</a>
 			</div>
 		</div>
 	</header>
 	<div class="hero-chat">
-		<div class="chats">
-			<div class="chat-header2">
-				<h1 class="h1-chat">Chats</h1>
+		<div class="chat-header">
+			<h1 class="h1-bigger">Chats</h1>
+			<div class="current-chat">
+				<img class="user-photo-chat" src="./assets/user1.png" alt="Profile picture">
+				<h1 class="username-chat-text">Jane Doe</h1>
 			</div>
-			<div class="user-chat-current">
+		</div>
+		<div class="block">
+			<div class="user-box-current">
 				<img class="user-photo-chat" src="./assets/user1.png" alt="Profile picture">
 				<p class="username-chat-text">Jane Doe</p>
 			</div>
 
-			<div class="user-chat">
+			<div class="user-box">
 				<img class="user-photo-chat" src="./assets/user2.png" alt="Profile picture">
 				<p class="username-chat-text">John Doe</p>
 			</div>
 
-			<div class="user-chat">
+			<div class="user-box">
 				<img class="user-photo-chat" src="./assets/user4.png" alt="Profile picture">
 				<p class="username-chat-text">Jamy Roe</p>
 			</div>
 
-			<div class="user-chat">
+			<div class="user-box">
+				<img class="user-photo-chat" src="./assets/user3.png" alt="Profile picture">
+				<p class="username-chat-text">Jane Roe</p>
+			</div>
+
+			<div class="user-box">
+				<img class="user-photo-chat" src="./assets/user2.png" alt="Profile picture">
+				<p class="username-chat-text">John Doe</p>
+			</div>
+
+			<div class="user-box">
+				<img class="user-photo-chat" src="./assets/user4.png" alt="Profile picture">
+				<p class="username-chat-text">Jamy Roe</p>
+			</div>
+
+			<div class="user-box">
 				<img class="user-photo-chat" src="./assets/user3.png" alt="Profile picture">
 				<p class="username-chat-text">Jane Roe</p>
 			</div>
 		</div>
 		<div class="opened">
-			<div class="chat-header">
-				<img class="user-photo-chat" src="./assets/user1.png" alt="Profile picture">
-				<h1 class="username-chat-text">Jane Doe</h1>
-			</div>
 			<div class="messages">
 				<div class="other-message">
 					<img class="user-photo-chat" src="./assets/user1.png" alt="Profile picture">
@@ -84,10 +99,12 @@
 				</div>
 			</div>
 			<div class="chat-footer">
-				<form action="">
+				<form class="chat-form" action="">
 					<input class="textbox chatbox" type="text" name="message">
+					<button class="transparent" type="submit" name="send" id="">
+						<img class="photo-button" src="./assets/send.png" alt="Send button">
+					</button>
 				</form>
-				<img class="send-photo-chat" src="./assets/send.png" alt="Send button">
 			</div>
 		</div>
 	</div>

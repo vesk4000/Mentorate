@@ -15,8 +15,8 @@
 			<a class="name" href="./src/index.html">Mentorate</a>
 		</div>
 		<div class="nav">
-			<div class="button">
-				<a class="text" href="./src/search.html">
+			<div class="nav-button">
+				<a class="big button text" href="./src/search.html">
 					Find A Mentor
 				</a>
 			</div>
@@ -35,8 +35,8 @@
 					<img class="icon" src="./assets/profile.png" alt="profile">
 				</a>
 			</div>
-			<div class="button">
-				<a class="text" href="./src/signIn.html">
+			<div class="nav-button">
+				<a class="big button text" href="./src/signIn.html">
 					Sign In
 				</a>
 			</div>
@@ -47,22 +47,22 @@
 			<h1 class="h1">Create an account</h1>
 			<form class="formSignUp" action="">
 				<div class="signUpContainer">
-					<p class="caption signup-header">Fill out the following form to register. </p>
+					<p class="caption signup-header h1-bigger">Fill out the following form to register. </p>
 					<div class="requiredFields">
 						<label class="label" for="">ID* </label><input class="textbox" type="text"
-							name="firstname"> <br>
+							name="firstname" required> <br>
 						<label class="label" for="">Name* </label><input class="textbox" type="text"
-							name="lastname"> <br>
+							name="lastname" required> <br>
 						<label class="label" for="">Email* </label><input class="textbox" type="email"
-							name="email"> <br>
+							name="email" required> <br>
 						<label class="label" for="">Password* </label> <input class="textbox" type="password"
-							name="password" id=""> <br>
+							name="password" required> <br>
 						<label class="label" for="">Address </label><input class="textbox" type="text"
 							name="email"> <br>
 						<label class="label" for="">ZIP code </label><input class="textbox" type="text"
 							name="email"> <br>
 						<label class="label" for="">Language* </label>
-						<select class="textbox">
+						<select class="textbox" id="language" required>
 							<option value="0" label="Select a language... " selected="selected">Select a language... </option>
 							<option value="en">English</option>
 							<option value="fr">French</option>
@@ -150,7 +150,7 @@
 							<option value="zu">Zulu</option>
 						</select> <br>
 						<label class="label" for="">Country* </label>
-						<select name="country" class="textbox" id="country">
+						<select name="country" class="textbox" id="country" required>
 							<option value="0" label="Select a country... " selected="selected">Select a country... </option>
 							<optgroup id="country-optgroup-Africa" label="Africa">
 								<option value="DZ" label="Algeria">Algeria</option>
@@ -416,7 +416,7 @@
 							</optgroup>
 						</select> <br>
 						<label class="label" for="">Sex* </label>
-						<select class="textbox">
+						<select class="textbox" required>
 							<option value="0" label="Select sex... " selected="selected">Select sex... </option>
 							<option value="female">Female</option>
 							<option value="male">Male</option>     
@@ -426,7 +426,7 @@
 					</div>
 					<div class="optionalFields">
 						<p class="caption">Want to become a mentor? Help your students get to know you by filling the
-							information below. </p>
+							information below.</p>
 							<label class="label" for="">Category </label>
 						<select class="textbox" name="" id="search-category">
 							<option value="any">Any</option>
@@ -444,7 +444,7 @@
 					</div>
 					<img class="signUpPic" src="./assets/signUpPic.png" alt="People creating ceramic vases.">
 				</div>
-				<input class="button2 text" type="submit" value="Create an account">
+				<input class="big button text" type="submit" value="Create an account">
 			</form>
 		</div>
 	</div>

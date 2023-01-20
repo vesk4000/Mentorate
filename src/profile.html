@@ -12,21 +12,21 @@
 <body>
 	<header class="header">
 		<div class="logo">
-			<a class="name" href="./index.html">Mentorate</a>
+			<a class="name" href="./src/index.html">Mentorate</a>
 		</div>
 		<div class="nav">
-			<div class="button">
-				<a class="text" href="./src/search.html">
+			<div class="nav-button">
+				<a class="big button text" href="./src/search.html">
 					Find A Mentor
 				</a>
 			</div>
 			<div>
-				<a href="./chat.html">
+				<a href="./src/chat.html">
 					<img class="icon" src="./assets/chat.png" alt="chat">
 				</a>
 			</div>
 			<div>
-				<a href="./notifications.html">
+				<a href="./src/notifications.html">
 					<img class="icon" src="./assets/notification.png" alt="notification">
 				</a>
 			</div>
@@ -35,8 +35,8 @@
 					<img class="icon" src="./assets/profile.png" alt="profile">
 				</a>
 			</div>
-			<div class="button">
-				<a class="text" href="./signIn.html">
+			<div class="nav-button">
+				<a class="big button text" href="./src/signIn.html">
 					Sign In
 				</a>
 			</div>
@@ -49,7 +49,7 @@
 				<div class="profile-bio-contents">
 					<div class="profile-bio-contents-name">
 						<h2>Your Name</h2>
-						<a class="profile-bio-contents-name-edit" href = "./src/edit-profile.html">Edit Profile</a>
+						<!-- <a class="small button" href = "./src/edit-profile.html">Edit Profile</a> -->
 					</div>
 					<em>Description... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pellentesque
 						risus non viverra pretium.</em>
@@ -68,41 +68,45 @@
 			Date and Time:
 			<form class="profile-add-meeting-form">
 				<input type="datetime-local" name="datetime">
-				<input class="profile-add-meeting-button" type="submit" value="Add Meeting">
+				<input class="small button" type="submit" value="Add Meeting">
 				<p></p>
 			</form>
 			<h4>Meeting Slots:</h4>
 			<div class="profile-meeting-slots">
 				<div class="profile-meeting-slot">
 					<div class="profile-meeting-slot-el">Tuesday, 7 February 2023, 9:00</div>
-					<button class="profile-button">Delete</button>
+					<button class="small button">Delete</button>
 				</div>
 				<div class="profile-meeting-slot">
 					<div class="profile-meeting-slot-el">Tuesday, 7 February 2023, 9:00</div>
 					<div class="profile-meeting-slot-el"><i>Howard Hamlin has booked this meeting</i></div>
-					<button class="profile-button">Approve</button><button class="profile-button">Reject</button>
+					<button class="small button">Approve</button><button class="small button">Reject</button>
 				</div>
 				<div class="profile-meeting-slot">
 					<div class="profile-meeting-slot-el">Tuesday, 7 February 2023, 15:00</div>
-					<button class="profile-button">Delete</button>
+					<button class="small button">Delete</button>
 				</div>
 			</div>
 		</div>
 		<div class="content-box">
 			<h3>Reviews</h3>
 			<div class="profile-review">
-				<img class="profile-mini-image" src="./assets/bio-profile.png">
-				Howard Hamlin
-				★★★★☆
+				<div class="review-heading">
+					<img class="profile-mini-image" src="./assets/user1.png">
+					Howard Hamlin
+					★★★★☆
+				</div>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis justo vitae nisi vulputate
 					tempor sed at arcu. Curabitur orci magna, lacinia vel turpis quis, tincidunt eleifend diam. Proin
 					pharetra tellus arcu, sit amet lobortis turpis ultrices ac.</p>
 			</div>
 			<hr>
 			<div class="profile-review">
-				<img class="profile-mini-image" src="./assets/bio-profile.png">
-				Chuck McGill
-				★★★★★
+				<div class="review-heading">
+					<img class="profile-mini-image" src="./assets/user2.png">
+					Chuck McGill
+					★★★★★
+				</div>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula orci nibh, eu ullamcorper
 					ligula tempus non. Nulla quis nibh eget augue facilisis scelerisque non viverra neque. </p>
 			</div>
@@ -110,7 +114,7 @@
 	</div>
 	<footer class="footer">
 		<div class="logo">
-			<a class="name" href="./index.html">Mentorate</a>
+			<a class="name" href="./src/index.html">Mentorate</a>
 		</div>
 		<div class="text">
 			Created by: Veselin Mitev and Aleksandra Savova

@@ -124,7 +124,7 @@ body {
 	margin: 0;
 	min-height: 100vh;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	color: #0b3509;
+	color: #071f05;
 	display: grid;
 	grid-template-rows: auto 1fr auto;
 }
@@ -344,14 +344,15 @@ footer {
 }
 
 .signUpPic {
-	width: 410px;
+	width: 100%;
 	height: auto;
+	grid-column-start: span 2;
 }
 
 .signUpContainer {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	align-items: flex-end;
+	align-items: flex-start;
 	column-gap: 40px;
 	background-color: #56a054;
 	padding: 40px 60px;
@@ -359,12 +360,16 @@ footer {
 	width: 840px;
 	height: auto;
 }
+* {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 .textbox {
 	background-color: #eef6ee;
+	color: #0b3509;
 	border-style: hidden;
 	border-radius: 5px;
-	height: 1.25rem;
+	height: 1.5rem;
 }
 
 .caption {
@@ -373,9 +378,9 @@ footer {
 	text-align: center;
 }
 
-.optional {
+/* .optional {
 	font-style: italic;
-}
+} */
 
 .chats {
 	height: 100%;
@@ -483,4 +488,16 @@ footer {
 
 .send-photo-chat {
 	width: 60px;
+}
+
+.multipleline {
+	max-width: 400px;
+	min-width: 400px;
+	max-height: 15rem;
+	height: 5rem;
+	min-height: 1.5rem;
+}
+
+.signup-header {
+	grid-column-start: span 2;
 }

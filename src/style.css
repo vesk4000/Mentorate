@@ -93,6 +93,8 @@
 	row-gap: 10px;
 	column-gap: 20px;
 	align-items: center;
+	align-content: stretch;
+	justify-content: space-between;
 }
 
 /***/
@@ -317,6 +319,7 @@ body {
 	border-style: hidden;
 	border-radius: 5px;
 	height: 1.5rem;
+	/* flex-shrink: 1; */
 }
 
 .caption {
@@ -360,6 +363,7 @@ body {
 .h1-bigger {
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	margin-left: 40px;
+	margin-right: 40px;
 	text-align: center;
 	font-size: 1.9rem;
 	justify-self: left;
@@ -460,10 +464,11 @@ body {
 
 .signup-header {
 	grid-column-start: span 2;
+	justify-self: stretch;
 }
 
 .block {
-	max-height: 515px;
+	max-height: 512px;
 	flex-grow: 1;
 	display: flex;
 	flex-direction: column;

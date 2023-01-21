@@ -30,8 +30,64 @@ function addFormValidationsListeners() {
 
 // Returns true if the input is valid and an error-message string if it is not
 function validateInput(input) {
-	if(input.validity.valid)
+	const specialChars = '/[!@#$%^&*()_+\-=\[\]{};\':"\\|,.<>\/?]+/;';
+	switch(input.id) {
+		case "signup-id":
+			let id = input.value;
+			let lastChar = id.charAt(id.length - 1);
+			if(!(id.length >= 5 && id.length <= 12))
+				return "ID has to be between 5 and 12 characters!";
+			if(!id.charAt(0).match(/[A-Z]/))
+				return "First character of ID has to be a capital letter!";
+			if(!(lastChar.match(/\d/) || specialChars.includes(lastChar)))
+				return "Last character has to be a number or a special character!";
+			return true;
+		case "signup-name":
+			if(!input.value.match(/^[a-zA-Z ]+$/))
+				return "Please enter a valid name (only characters and spaces)!";
+			return true;
+		case "signup-email":
+			if(!input.value.match(/^[A-Za-z0-9._+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]+$/))
+				return "Please enter a valid email address!"
+			return true;
+		case "signup-password":
+			const password = input.value;
+			if(password.length < 12)
+				return "Password length must be at least 12 characters!";
+			let hasUppercase = false;
+			let hasLowercase = false;
+			let hasDigit = false;
+			let hasSymbol = false;
+			for(let c of password) {
+				if(c.match(/[A-Z]/))
+					hasUppercase = true;
+				if(c.match(/[a-z]/))
+					hasLowercase = true;
+				if(c.match(/\d/))
+					hasDigit = true;
+				if(specialChars.includes(c))
+					hasSymbol = true;
+			}
+			if(!(hasUppercase && hasLowercase && hasDigit && hasSymbol))
+				return "Password must include an uppercase character, a lowercase character, a digit and a special symbol";
+			return true;
+		case "signup-zip":
+			if(!input.value.match(/^\d{4}[ ]*[A-Z]{2}$/))
+				return "Please enter a valid Netherlands ZIP Code!";
+			return true;
+		case "signup-country":
+			if(input.value === "")
+				return "Please select a country!";
+			return true;
+		case "signup-language":
+			if(input.value === "")
+			return "Please select a language!";
 		return true;
-	return String(input.validationMessage);
+		case "signup-sex":
+			if(input.value === "")
+			return "Please select a sex!";
+		return true;
+	}
+	return true;
 }
 

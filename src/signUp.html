@@ -52,12 +52,13 @@
 					<div class="requiredFields">
 						<div class="validation-box">
 							<label class="validation-label" for="signup-id">ID*</label>
-							<input class="textbox validation-input" type="text" id="signup-id" name="id" required minlength="5" maxlength="12">
+							<input class="textbox validation-input" type="text" id="signup-id" name="id" 
+							required pattern="^[A-Z].{3,11}([~!@#$%^&*()\-=+/';:]|\d)$">
 							<div class="validation-error" id="validation-error-signup-id"></div>
 						</div>
 						<div class="validation-box">
 							<label class="validation-label" for="signup-name">Name*</label>
-							<input class="textbox validation-input" type="text" name="name" id="signup-name" required>
+							<input class="textbox validation-input" type="text" name="name" id="signup-name" required pattern="^[a-zA-Z ]+$">
 							<div class="validation-error" id="validation-error-signup-name"></div>
 						</div>
 						<div class="validation-box">
@@ -67,7 +68,7 @@
 						</div>
 						<div class="validation-box">
 							<label class="validation-label" for="signup-password">Password* </label> <input class="textbox validation-input" type="password"
-							name="password" id="signup-password" required minlength="12"> <br>
+							name="password" id="signup-password" required pattern="^(?=.*[A-Z]+)(?=.*[a-z]+)(?=.*\d+)(?=.*[~!@#$%^&*()\-=+/';:]+).{12,}$"> <br>
 							<div class="validation-error" id="validation-error-signup-password"></div>
 						</div>
 						<div class="validation-box">
@@ -76,9 +77,8 @@
 							<div class="validation-error" id="validation-error-signup-address"></div>
 						</div>
 						<div class="validation-box">
-							<!-- Maxlength of zip code is 7 in case the user enters white space between the digits and the letters -->
 							<label class="validation-label optional" for="signup-zip">ZIP code </label><input class="textbox validation-input" type="text"
-							name="zip" id="signup-zip" minlength="6" maxlength="7"> <br>
+							name="zip" id="signup-zip" pattern="^\d{4}[ ]*[a-zA-Z]{2}$"> <br>
 							<div class="validation-error" id="validation-error-signup-zip"></div>
 						</div>
 						<div class="validation-box">

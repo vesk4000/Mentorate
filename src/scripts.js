@@ -12,9 +12,10 @@ function addFormValidationsListeners() {
 				let error = box.querySelector(".validation-error");
 				if(input == null || error == null)
 					continue;
-				if(!input.validity.valid) {
+				let validatedInput = validateInput(input);
+				if(validateInput(input) !== true) {
 					valid = false;
-					error.innerHTML = String(input.validationMessage);
+					error.innerHTML = validatedInput;
 				}
 				else {
 					error.innerHTML = "Looks good!";
@@ -25,5 +26,12 @@ function addFormValidationsListeners() {
 			}
 		});
 	}
+}
+
+// Returns true if the input is valid and an error-message string if it is not
+function validateInput(input) {
+	if(input.validity.valid)
+		return true;
+	return String(input.validationMessage);
 }
 

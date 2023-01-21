@@ -44,7 +44,9 @@
 }
 
 .profile-add-meeting-form {
-	display: inline
+	display: flex;
+	align-items: center;
+	gap: 20px;
 }
 
 .profile-meeting-slots {
@@ -260,8 +262,12 @@ body {
 
 .signInContainer {
 	background-color: #56a054;
+	display: flex;
+	flex-direction: column;
+	align-content: space-between;
 	padding: 40px 90px;
 	border-radius: 30px;
+	width: 300px;
 }
 
 .form {
@@ -493,4 +499,16 @@ body {
 	border-color: darkred;
 	border-style: solid;
 	border-width: 1.5px;
+}
+
+.date {
+	max-width: 280px;
+}
+
+.inline {
+	display: inline;
+}
+
+.validation-error {
+	visibility: hidden;
 }

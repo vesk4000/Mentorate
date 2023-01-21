@@ -12,6 +12,7 @@ function addFormValidationsListeners() {
 				let error = box.querySelector(".validation-error");
 				if(input == null || error == null)
 					continue;
+				error.style.visibility = "visible";
 				let validatedInput = validateInput(input);
 				if(validateInput(input) !== true) {
 					valid = false;

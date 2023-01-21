@@ -57,29 +57,34 @@
 							<div class="validation-error" id="validation-error-signup-id"></div>
 						</div>
 						<div class="validation-box">
-							<label class="label" for="">Name*</label>
-							<input class="textbox" type="text" name="name" required>
+							<label class="validation-label" for="signup-name">Name*</label>
+							<input class="textbox validation-input" type="text" name="name" id="signup-name" required>
+							<div class="validation-error" id="validation-error-signup-name"></div>
 						</div>
 						<div class="validation-box">
-							<label class="label" for="">Email* </label><input class="textbox" type="email"
-							name="email" required> <br>
+							<label class="validation-label" for="signup-email">Email* </label><input class="textbox validation-input" type="email"
+							name="email" id="signup-email" required> <br>
+							<div class="validation-error" id="validation-error-signup-email"></div>
 						</div>
 						<div class="validation-box">
-							<label class="label" for="">Password* </label> <input class="textbox" type="password"
-							name="password" required minlength="12"> <br>
+							<label class="validation-label" for="signup-password">Password* </label> <input class="textbox validation-input" type="password"
+							name="password" id="signup-password" required minlength="12"> <br>
+							<div class="validation-error" id="validation-error-signup-password"></div>
 						</div>
 						<div class="validation-box">
-							<label class="label" for="">Address </label><input class="textbox" type="text"
-							name="address"> <br>
+							<label class="validation-label optional" for="signup-address">Address </label><input class="textbox validation-input" type="text"
+							id="signup-address" name="address"> <br>
+							<div class="validation-error" id="validation-error-signup-address"></div>
 						</div>
 						<div class="validation-box">
 							<!-- Maxlength of zip code is 7 in case the user enters white space between the digits and the letters -->
-							<label class="label" for="">ZIP code </label><input class="textbox" type="text"
-							name="zip" minlength="6" maxlength="7"> <br>
+							<label class="validation-label optional" for="signup-zip">ZIP code </label><input class="textbox validation-input" type="text"
+							name="zip" id="signup-zip" minlength="6" maxlength="7"> <br>
+							<div class="validation-error" id="validation-error-signup-zip"></div>
 						</div>
 						<div class="validation-box">
-							<label class="label" for="">Country* </label>
-							<select name="country" class="textbox" id="country" required>
+							<label class="validation-label" for="signup-country">Country* </label>
+							<select name="country" class="textbox validation-input" id="signup-country" required>
 							<option value="" label="Select a country... " selected="selected" disabled>Select a country... </option>
 							<optgroup id="country-optgroup-Africa" label="Africa">
 								<option value="DZ" label="Algeria">Algeria</option>
@@ -343,10 +348,11 @@
 								<option value="WF" label="Wallis and Futuna">Wallis and Futuna</option>
 							</optgroup>
 							</select> <br>
+							<div class="validation-error" id="validation-error-signup-country"></div>
 						</div>
 						<div class="validation-box">
-							<label class="label" for="">Language* </label>
-							<select class="textbox" id="language" required>
+							<label class="validation-label" for="signup-language">Language* </label>
+							<select name="language" class="textbox validation-input" id="signup-language" required>
 								<option value="" label="Select a language... " selected="selected" disabled>Select a language... </option>
 								<option value="en">English</option>
 								<option value="fr">French</option>
@@ -433,42 +439,48 @@
 								<option value="yo">Yoruba</option>
 								<option value="zu">Zulu</option>
 							</select> <br>
+							<div class="validation-error" id="validation-error-signup-language"></div>
 						</div>
 						<div class="validation-box">
-							<label class="label" for="">Sex* </label>
-							<select class="textbox" required>
+							<label class="validation-label" for="signup-sex">Sex* </label>
+							<select class="textbox validation-input" name="sex" id="signup-sex" required>
 								<option value="" label="Select sex... " selected="selected" disabled>Select sex... </option>
 								<option value="female">Female</option>
 								<option value="male">Male</option>     
 								<option value="other">Other</option>     
 								<option value="unknown">Prefer not to say</option>
 							</select> <br>
+							<div class="validation-error" id="validation-error-signup-sex"></div>
 						</div>
 					</div>
 					<div class="optionalFields">
 						<p class="caption">Want to become a mentor? Help your students get to know you by filling the
 							information below.</p>
 						<div class="validation-box">
-							<label class="label" for="">Category </label>
-							<select class="textbox" name="" id="search-category">
+							<label class="validation-label optional" for="signup-category">Category </label>
+							<select class="textbox validation-input" name="category" id="signup-category">
 								<option value="any">Any</option>
 								<option value="academic">Academic</option>
 								<option value="general">General</option>
 								<option value="legal">Legal</option>
 								<option value="lifestyle">Life Style</option>
 							</select> <br> 
+							<div class="validation-error" id="validation-error-signup-category"></div>
 						</div>
 						<div class="validation-box">
-							<label class="label optional" for="">Company </label><input class="textbox" type="text"
-							name="company"> <br>
+							<label class="validation-label optional" for="signup-company">Company </label><input class="textbox validation-input" type="text"
+							name="company" id="signup-company"> <br>
+							<div class="validation-error" id="validation-error-signup-company"></div>
 						</div>	                   
 						<div class="validation-box">
-							<label class="label optional" for="">Location </label><input class="textbox" type="text"
-							name="location"> <br>
+							<label class="validation-label optional" for="signup-location">Location </label><input class="textbox validation-input" type="text"
+							name="location" id="signup-location"> <br>
+							<div class="validation-error" id="validation-error-signup-location"></div>
 						</div>
 						<div class="validation-box">
-							<label class="label optional" for="">Bio </label>
-							<textarea class="textbox multipleline" ></textarea>
+							<label class="validation-label optional" for="signup-bio">Bio </label>
+							<textarea class="textbox multipleline validation-input" name="bio" id="signup-bio"></textarea>
+							<div class="validation-error" id="validation-error-signup-bio"></div>
 						</div>
 					</div>
 					<img class="signUpPic" src="./assets/signUpPic.png" alt="People creating ceramic vases.">

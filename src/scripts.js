@@ -12,14 +12,16 @@ function addFormValidationsListeners() {
 		form.addEventListener("submit", (event) => {
 			// Fill the tracking box with the needed properties
 			let trackingBox = document.querySelector(".tracking-box");
-			trackingBox.style.visibility = "visible";
-			trackingBox.innerHTML =
-			`<div>Behavioural tracking:</div>\
-			<div>Number of mouse clicks: ${tracking.clicks} </div> \
-			<div>Number of key presses: ${tracking.keys} </div> \
-			<div>Number of characters typed: ${countNumberOfCharactersTyped()} </div> \
-			<div>Total time spent on page: ${Math.floor((Date.now() - tracking.pageLoadTime) / 1000)} second(s) </div> \
-			`;
+			if(trackingBox != null) {
+				trackingBox.style.visibility = "visible";
+				trackingBox.innerHTML =
+				`<div>Behavioural tracking:</div>\
+				<div>Number of mouse clicks: ${tracking.clicks} </div> \
+				<div>Number of key presses: ${tracking.keys} </div> \
+				<div>Number of characters typed: ${countNumberOfCharactersTyped()} </div> \
+				<div>Total time spent on page: ${Math.floor((Date.now() - tracking.pageLoadTime) / 1000)} second(s) </div> \
+				`;
+			}
 			// Iterate through all of the validation-boxes and checks if their inputs are valid
 			let valid = true;
 			for(let box of form.getElementsByClassName("validation-box")) {

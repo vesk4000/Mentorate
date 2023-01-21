@@ -1,11 +1,18 @@
 window.onload = () => {
 	addFormValidationsListeners();
+	addTrackingListeners();
 };
 
 function addFormValidationsListeners() {
 	const forms = document.getElementsByClassName("validation-form");
 	for(let form of forms) {
 		form.addEventListener("submit", (event) => {
+			let trackingBox = document.querySelector(".tracking-box");
+			trackingBox.style.visibility = "visible";
+			trackingBox.innerHTML =
+			`Behavioural tracking:\n \
+			Number of mouse clicks: ${tracking.clicks} \n \
+			`;
 			let valid = true;
 			for(let box of form.getElementsByClassName("validation-box")) {
 				let input = box.querySelector(".validation-input");
@@ -35,3 +42,14 @@ function validateInput(input) {
 	return String(input.validationMessage);
 }
 
+let tracking = {
+	clicks: 0,
+};
+
+function addTrackingListeners() {
+	document.querySelectorAll("body").forEach((e) => {
+		e.addEventListener("click", (event) => {
+			++tracking.clicks;
+		});
+	});
+}

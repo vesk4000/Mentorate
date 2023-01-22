@@ -52,14 +52,14 @@
 					<div class="requiredFields">
 						<div class="validation-box">
 							<label class="validation-label" for="signup-id">ID*</label>
-							<input class="textbox validation-input" type="text" id="signup-id" name="id" 
-							required
+							<input class="textbox validation-input" type="text" id="signup-id" name="id" required
 								pattern="^[A-Z].{3,11}([~!@#$%^&*()\-=+/';:]|\d)$">
 							<div class="validation-error" id="validation-error-signup-id">error</div>
 						</div>
 						<div class="validation-box">
 							<label class="validation-label" for="signup-name">Name*</label>
-							<input class="textbox validation-input" type="text" name="name" id="signup-name" required pattern="^[a-zA-Z ]+$">
+							<input class="textbox validation-input" type="text" name="name" id="signup-name" required
+								pattern="^[a-zA-Z ]+$">
 							<div class="validation-error" id="validation-error-signup-name">error</div>
 						</div>
 						<div class="validation-box">
@@ -71,7 +71,8 @@
 						<div class="validation-box">
 							<label class="validation-label" for="signup-password">Password*</label>
 							<input class="textbox validation-input" type="password" name="password" id="signup-password"
-								required pattern="^(?=.*[A-Z]+)(?=.*[a-z]+)(?=.*\d+)(?=.*[~!@#$%^&*()\-=+/';:]+).{12,}$">
+								required
+								pattern="^(?=.*[A-Z]+)(?=.*[a-z]+)(?=.*\d+)(?=.*[~!@#$%^&*()\-=+/';:]+).{12,}$">
 							<div class="validation-error" id="validation-error-signup-password">error</div>
 						</div>
 						<div class="validation-box">
@@ -81,7 +82,8 @@
 						</div>
 						<div class="validation-box">
 							<label class="validation-label optional" for="signup-zip">ZIP code*</label>
-							<input class="textbox validation-input" type="text" name="zip" id="signup-zip" pattern="^\d{4}[ ]*[a-zA-Z]{2}$">
+							<input class="textbox validation-input" type="text" name="zip" id="signup-zip"
+								pattern="^\d{4}[ ]*[a-zA-Z]{2}$">
 							<div class="validation-error" id="validation-error-signup-zip">error</div>
 						</div>
 						<div class="validation-box">

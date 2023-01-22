@@ -16,7 +16,7 @@ function addFormValidationsListeners() {
 				trackingBox.style.visibility = "visible";
 				trackingBox.innerHTML =
 				`<div>Behavioural tracking:</div>\
-				<div>Number of mouse clicks: ${tracking.clicks} </div> \
+				<div>Number of clicks: ${tracking.clicks} </div> \
 				<div>Number of key presses: ${tracking.keys} </div> \
 				<div>Number of characters typed: ${countNumberOfCharactersTyped()} </div> \
 				<div>Total time spent on page: ${Math.floor((Date.now() - tracking.pageLoadTime) / 1000)} second(s) </div> \

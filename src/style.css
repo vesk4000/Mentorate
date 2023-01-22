@@ -1,9 +1,9 @@
 :root {
 	--color-background: #ffffff;
-	--color-background-accent: #f7fff7;
+	--color-background-accent: #f8fef8;
 	--color-border-muted: #ededed;
-	--color-text-red: #ff4141;
-	--color-text-green: #16eb5d;
+	--color-text-red: firebrick;
+	--color-text-green: #5fc95b;
 	--radius-size-border: 10px;
 	--style-border: 1px var(--color-border-muted) solid;
 }
@@ -230,7 +230,7 @@ body {
 
 
 .hero {
-	/* background-color: #eef6ee; */
+	background-color: #ecf7ec;
 	border: var(--style-border);
 	padding: 40px 45px 60px;
 	display: flex;
@@ -333,7 +333,7 @@ body {
 }
 
 .textbox {
-	background-color: #e2ede2;
+	background-color: #dae8da;
 	color: #0b3509;
 	border-style: hidden;
 	border-radius: 5px;
@@ -390,7 +390,7 @@ body {
 
 .chat-header,
 .chat-footer {
-	background-color: #96c79461;
+	background-color: #96c79478;
 	display: flex;
 	align-content: center;
 	align-items: center;

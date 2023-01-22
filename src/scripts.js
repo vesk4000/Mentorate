@@ -6,6 +6,7 @@ function addFormValidationsListeners() {
 	const forms = document.getElementsByClassName("validation-form");
 	for(let form of forms) {
 		form.addEventListener("submit", (event) => {
+			// Iterate through all of the validation-boxes and checks if their inputs are valid
 			let valid = true;
 			for(let box of form.getElementsByClassName("validation-box")) {
 				let input = box.querySelector(".validation-input");
@@ -21,9 +22,18 @@ function addFormValidationsListeners() {
 					error.innerHTML = "Looks good!";
 				}
 			}
-			if(!valid) {
-				event.preventDefault();
+			// If all inputs in the form are valid, show an alert box with the values
+			if(valid) {
+				const data = new FormData(event.target);
+				const it = data.entries();
+				let ans = "Data received from the form:\n";
+				for(let entry of it) {
+					ans += String(entry).replace(",", ": ") + "\n";
+				}
+				alert(ans);
 			}
+			// Prevent the default behaviour of submitting a form
+			event.preventDefault();
 		});
 	}
 }

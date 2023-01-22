@@ -42,7 +42,7 @@ function addFormValidationsListeners() {
 
 // Returns true if the input is valid and an error-message string if it is not
 function validateInput(input) {
-	const specialChars = '/[!@#$%^&*()_+\-=\[\]{};\':"\\|,.<>\/?]+/;';
+	const specialChars = '/[~!@#$%^&*()_+\-=\[\]{};\':"\\|,.<>\/?]+/;';
 	switch(input.id) {
 		case "signup-id":
 			let id = input.value;

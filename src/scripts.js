@@ -34,11 +34,12 @@ function addFormValidationsListeners() {
 				let validatedInput = validateInput(input);
 				if(validateInput(input) !== true) {
 					valid = false;
-					error.innerHTML = validatedInput;
+					error.innerHTML = `<span class="validation-error-invalid">${validatedInput}</span>`;
 				}
 				else {
-					error.innerHTML = "Looks good!";
+					error.innerHTML = `<span class="validation-error-valid">Looks good!</span>`;
 				}
+				
 			}
 			// If all inputs in the form are valid, show an alert box with the values
 			if(valid) {

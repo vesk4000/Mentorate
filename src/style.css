@@ -1,3 +1,13 @@
+:root {
+	--color-background: #ffffff;
+	--color-background-accent: #f7fff7;
+	--color-border-muted: #ededed;
+	--color-text-red: #ff4141;
+	--color-text-green: #16eb5d;
+	--radius-size-border: 10px;
+	--style-border: 1px var(--color-border-muted) solid;
+}
+
 .content {
 	flex-grow: 1;
 	background-color: #eef6ee;
@@ -220,7 +230,8 @@ body {
 
 
 .hero {
-	background-color: #eef6ee;
+	/* background-color: #eef6ee; */
+	border: var(--style-border);
 	padding: 40px 45px 60px;
 	display: flex;
 	align-items: center;
@@ -260,13 +271,17 @@ body {
 	text-align: center;
 }
 
+.box-container {
+	background-color: var(--color-background-accent);
+	border: var(--style-border);
+	border-radius: var(--radius-size-border);
+}
+
 .signInContainer {
-	background-color: #56a054;
 	display: flex;
 	flex-direction: column;
 	align-content: space-between;
 	padding: 40px 90px;
-	border-radius: 30px;
 	width: 300px;
 }
 
@@ -308,9 +323,7 @@ body {
 	align-items: flex-start;
 	justify-content: center;
 	column-gap: 40px;
-	background-color: #56a054;
 	padding: 40px 60px;
-	border-radius: 30px;
 	width: 85%;
 	height: auto;
 	align-self: center;
@@ -488,7 +501,7 @@ body {
 	gap: 4px;
 }
 
-.textbox:valid {
+/*.textbox:valid {
 	border-color: green;
 	border-style: solid;
 	border-width: 1.5px;
@@ -499,7 +512,7 @@ body {
 	border-color: darkred;
 	border-style: solid;
 	border-width: 1.5px;
-}
+}*/
 
 .date {
 	max-width: 280px;
@@ -515,9 +528,17 @@ body {
 
 .tracking-box {
 	visibility: hidden;
-	border: 2px solid black;
+	border: 2px solid var(--color-border-muted);
 	margin: 10px;
 	padding: 5px;
 	border-radius: 10px;
 	background-color: lightgray;
+}
+
+.validation-error-invalid {
+	color:var(--color-text-red);
+}
+
+.validation-error-valid {
+	color:var(--color-text-green);
 }

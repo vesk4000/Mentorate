@@ -66,8 +66,11 @@
 		<div class="content-box">
 			<h3>Manage Meetings</h3>
 			Date and Time:
-			<form class="profile-add-meeting-form">
-				<input type="datetime-local" name="datetime">
+			<form class="validation-form profile-add-meeting-form" novalidate>
+				<div class="validation-box inline">
+					<input type="datetime-local" name="datetime" class="validation-input textbox date" required>
+					<div class="validation-error">error</div>
+				</div>
 				<input class="small button" type="submit" value="Add Meeting">
 				<p></p>
 			</form>

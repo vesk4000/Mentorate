@@ -22,6 +22,7 @@ function addFormValidationsListeners() {
 				<div>Total time spent on page: ${Math.floor((Date.now() - tracking.pageLoadTime) / 1000)} second(s) </div> \
 				`;
 			}
+			
 			// Iterate through all of the validation-boxes and checks if their inputs are valid
 			let valid = true;
 			for(let box of form.getElementsByClassName("validation-box")) {
@@ -39,10 +40,18 @@ function addFormValidationsListeners() {
 					error.innerHTML = "Looks good!";
 				}
 			}
-			// If the form has any invalid inputs, prevent the submition
-			if(!valid) {
-				event.preventDefault();
+			// If all inputs in the form are valid, show an alert box with the values
+			if(valid) {
+				const data = new FormData(event.target);
+				const it = data.entries();
+				let ans = "Data received from the form:\n";
+				for(let entry of it) {
+					ans += String(entry).replace(",", ": ") + "\n";
+				}
+				alert(ans);
 			}
+			// Prevent the default behaviour of submitting a form
+			event.preventDefault();
 		});
 	}
 }
